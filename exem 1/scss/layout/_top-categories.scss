@@ -1,0 +1,49 @@
+@use "../base" as *;
+@use "../components" as *;
+
+.top-categories {
+  margin-bottom: 80px;
+  .categories-container {
+    padding: 0 50px;
+    .categories-info {
+      display: flex;
+      justify-content: start;
+      h1 {
+        text-align: start;
+        color: $color-first;
+        font-family: Rubik;
+        font-size: $fontSize6;
+        font-weight: $fontWtThree;
+        line-height: $lineheight5;
+      }
+    }
+    .categories-content {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 295px 295px 295px 295px;
+      grid-template-rows: 350px 350px;
+      gap: 20px;
+      .categories-items {
+        position: relative;
+        div {
+          width: 295px;
+          height: 350px;
+          background-color: $color-second;
+          border-radius: 8px;
+        }
+        p {
+          width: 295px;
+          position: absolute;
+          z-index: 20;
+          bottom: 40px;
+          color: $color-white;
+          font-family: Rubik;
+          font-size: $fontSize4;
+          font-weight: $fontWtTwo;
+          line-height: $lineheight3;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+@use "../base" as *;
+@use "../components" as *;
+
+.treding-course {
+  .treding-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .treding-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 56px;
+      margin-bottom: 48px;
+      h2 {
+        color: $color-first;
+        font-family: Rubik;
+        font-size: $fontSize6;
+        font-weight: $fontWtThree;
+        line-height: $fontSize7;
+      }
+      .treding-pages {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        p {
+          width: 167px;
+          text-align: center;
+          color: $color-four;
+          font-family: Montserrat;
+          font-size: $fontSize3;
+          font-style: normal;
+          font-weight: $fontWtOne;
+          line-height: $fontSize5;
+          padding: 8px 32px;
+          transition: all 0.3s ease;
+          border-radius: 8px;
+          cursor: pointer;
+          &:checked {
+            background-color: $color-three;
+            color: $color-white;
+          }
+          &:hover {
+            background-color: $color-three;
+            color: $color-white;
+          }
+        }
+        p:first-child {
+          background-color: $color-three;
+          color: $color-white;
+        }
+      }
+    }
+    .treding-content {
+      display: grid;
+      grid-template-columns: 311px 311px 311px 311px;
+      grid-template-rows: 427px 427px;
+      gap: 37px;
+      .treding-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: $color-white;
+        border-radius: 8px;
+        width: 295px;
+        height: 427px;
+        transition: all 0.4s ease-in-out;
+        &:first-child {
+          filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
+        }
+
+        &:hover {
+          filter: drop-shadow(40px 40px 57px rgba(0, 0, 0, 0.1));
+        }
+        .img-ramka {
+          margin-top: 16px;
+          margin-right: 16px;
+          margin-left: 16px;
+          width: 263px;
+          height: 208px;
+          background-color: $color-few;
+          border-radius: 8px;
+        }
+        .img-info-2 {
+          position: absolute;
+          top: 207px;
+          left: 85px;
+        }
+
+        h4 {
+          width: 264px;
+          padding-top: 23px;
+          color: $color-first;
+          font-family: Rubik;
+          font-size: $fontSize3;
+          font-weight: $fontWtTwo;
+          line-height: $fontSize4;
+          padding-bottom: 8px;
+        }
+        .p-11 {
+          width: 264px;
+          text-align: start;
+          color: $color-three;
+          font-family: Montserrat;
+          font-size: $fontSize1;
+          font-weight: bold;
+          font-weight: $fontWtOne;
+          line-height: $lineheight1;
+          padding-bottom: 12px;
+        }
+        .zvezda-and-text {
+          width: 264px;
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          align-items: center;
+          justify-content: flex-start;
+          padding-bottom: 20px;
+          p {
+            color: $color-second;
+            font-family: Montserrat;
+            font-size: $fontSize2;
+            font-weight: $fontWtOne;
+            line-height: $lineheight1;
+          }
+        }
+        .bottom-info {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+          align-items: center;
+          width: 264px;
+          justify-content: flex-start;
+          p {
+            color: $color-few;
+            font-family: Montserrat;
+            font-size: $fontSize3;
+            font-weight: $fontWtOne;
+            line-height: $lineheight2;
+            text-decoration: line-through;
+            &:last-child {
+              color: $color-first;
+              font-family: Rubik;
+              font-size: $fontSize4;
+              font-weight: $fontWtTwo;
+              line-height: $lineheight3;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .treding-bottom-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 56px;
+      margin-bottom: 160px;
+      a {
+        width: 288px;
+        padding: 14px 24px;
+        color: $color-white;
+        background-color: $color-three;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: $fontSize3;
+        font-weight: $fontWtOne;
+        line-height: $lineheight3;
+        border-radius: 8px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: rgba(255, 255, 255, 0.922);
+          background-color: #ca1e6b;
+        }
+      }
+    }
+  }
+}

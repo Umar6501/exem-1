@@ -1,0 +1,141 @@
+@use "../base" as *;
+@use "../components" as *;
+.header {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: -40;
+  background-color: gray;
+  height: 120px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  z-index: 99;
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    z-index: 99;
+    .header-logo {
+      img {
+        cursor: pointer;
+      }
+    }
+    .menu {
+      display: none;
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .search-bar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .input {
+          outline: none;
+          border: 1px solid $color-few;
+          border-radius: 8px;
+          padding: 11.2px 340px 11.2px 16px;
+          font-family: Montserrat;
+          font-size: $fontSize2;
+          font-weight: $fontWtOne;
+          line-height: $lineheight1;
+        }
+        .icon {
+          position: absolute;
+          right: 12px;
+          top: 12px;
+          .img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .select {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-family: Montserrat;
+        color: $color-first;
+        font-family: Montserrat;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $fontWtThree;
+        line-height: $lineheight3;
+        margin-right: 24px;
+        option {
+          font-family: Montserrat;
+          padding: auto;
+        }
+      }
+      .third-text {
+        p {
+          // width: 158px;
+          cursor: pointer;
+          color: $color-first;
+          font-family: Montserrat;
+          font-size: $fontSize3;
+          font-weight: $fontWtOne;
+          line-height: $lineheight1;
+          transition: all 0.3s ease;
+          &:hover {
+            color: #0219347a;
+          }
+        }
+      }
+      .btn-1 {
+        a {
+          // width: 111px;
+          padding: 8px 32px;
+          border: 1px solid $color-first;
+          border-radius: 8px;
+          color: $color-first;
+          font-family: Montserrat;
+          font-size: $fontSize3;
+          font-weight: $fontWtOne;
+          line-height: $lineheight1;
+          transition: all 0.3s ease;
+          &:hover {
+            border: 1px solid $color-three;
+            color: $color-white;
+            background-color: $color-three;
+          }
+        }
+      }
+      .btn-2 {
+        a {
+          // width: 129px;
+          padding: 8px 32px;
+          border: 1px solid $color-three;
+          background-color: $color-three;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+
+          color: $color-white;
+          font-family: Montserrat;
+          font-size: $fontSize3;
+          font-weight: $fontWtOne;
+          line-height: $lineheight1;
+          &:hover {
+            color: rgba(255, 255, 255, 0.922);
+            background-color: #ca1e6b;
+            border: 1px solid #ce1e6b;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 1032px) {
+//   .header {
+//     .header-content {
+//       .nav-bar {
+//         .nav-links {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,38 @@
+@use "../base" as *;
+@use "../components" as *;
+
+.company-section {
+  .company-container {
+    padding: 0 133px;
+    .company-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: $color-first;
+        font-family: Rubik;
+        font-size: $fontSize6;
+        font-weight: $fontWtThree;
+        line-height: $lineheight5;
+        padding-bottom: 56px;
+      }
+    }
+    .company-content {
+      display: grid;
+      grid-template-columns: 250px 250px 250px 250px;
+      grid-template-rows: 104px 104px;
+      gap: 25px;
+      .com-i {
+        &:last-child {
+          grid-column: 3 / 4;
+          grid-row-start: span 2;
+        }
+      }
+      .comn-i {
+        display: grid;
+        grid-column: 2 / 3;
+        grid-row-start: span 2;
+      }
+    }
+  }
+}
